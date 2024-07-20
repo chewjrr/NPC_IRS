@@ -1,0 +1,25 @@
+html, body, #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .main-container {
+    transition: margin-left 0.3s ease;
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .main-container.open {
+    margin-left: 200px; /* Ширина бокового меню */
+    width: calc(100% - 200px);
+  }
+  
+  .ag-theme-alpine {
+    height: 100%;
+    width: 100%;
+  }
+  
