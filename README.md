@@ -1,8 +1,46 @@
-# React + Vite
+# Руководство по проекту
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Содержание
 
-Currently, two official plugins are available:
+- [Использование](#использование)
+  - [Клиентская часть](#клиентская-часть)
+  - [Серверная часть](#серверная-часть)
+- [Настройка базы данных](#настройка-базы-данных)
+- [Устранение неполадок](#устранение-неполадок)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+Установите зависимости для клиента и сервера:
+
+   ```bash
+   npm i
+   ```
+
+## Использование
+
+### Клиентская часть
+
+Чтобы запустить клиентскую часть приложения, перейдите в каталог клиента и используйте следующую команду:
+
+```bash
+npm run dev
+```
+
+### Серверная часть
+
+Чтобы запустить серверную часть приложения, вернитесь в корневой каталог проекта и используйте следующую команду:
+
+```bash
+npm start
+```
+
+## Настройка базы данных
+
+1. Создайте новую базу данных с помощью pgAdmin4.
+
+2. Восстановите структуру базы данных и данные, используя файл `init-db.sql`.
+
+3. Обновите данные подключения к базе данных в файле `server/database.js` в соответствии с вашей установкой PostgreSQL.
+
+## Устранение неполадок
+
+Если у вас возникнут какие-либо проблемы, вы можете использовать файл `scripts.txt` с инструментом запросов для их устранения и решения.
